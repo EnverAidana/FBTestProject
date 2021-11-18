@@ -20,7 +20,7 @@ Scenario('Authorization and check friends count', ({ I }) => {
 
         console.log(page.evaluate( (varName) => window[varName], flashVariableName ));
 
-        if(flashVariableName <= 1  )
+        if(flashVariableName < 1  )
         {
             throw ('More than one friends')
         }
