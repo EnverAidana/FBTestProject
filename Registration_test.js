@@ -1,7 +1,7 @@
 Feature('Registration');
 
 Scenario('Registration in FaceBook', ({ I }) => {
-    I.amOnPage('/')
+    I.amOnPage('')
     I.waitForElement({xpath:"//*[@id='pass']"})
     I.click('[data-testid="open-registration-form-button"]')
 
@@ -18,7 +18,9 @@ Scenario('Registration in FaceBook', ({ I }) => {
     I.selectOption('Год','1994')
     I.checkOption('Женщина')
     I.click("websubmit")
+
     I.wait(3)
+
     I.waitForText("Введите код из эл. письма")
     
 });
