@@ -1,6 +1,6 @@
 # FBTestProject
 
-Simple test project using 
+Simple test project using Puppeteer and CodeceptJS 
 
 Installation
 node js install
